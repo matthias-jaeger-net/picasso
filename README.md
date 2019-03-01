@@ -33,8 +33,8 @@ function codex_custom_init() {
 add_action( 'init', 'codex_custom_init' );
 ```
 
-``` php
 Displaying a custom post type in the loop
+``` php
 $args = array( 'post_type' => 'product', 'posts_per_page' => 10 );
 $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) : $loop->the_post();
